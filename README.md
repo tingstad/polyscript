@@ -13,6 +13,18 @@ For the rest of the file, I wanted to have some common code, and some interprete
 
 Tested on PowerShell 2.0 and 7.1, Windows Cmd 6.1, Bash 3.2 and 5.0, and Dash.
 
+## Description
+
+Each language doesn't care what's inside a string or comment, let's replace those with `_`:
+
+```
+     @{a="\"} >$null # " 2>/dev/null || true #" >NUL 2>&1 || TYPE NUL & ECHO OFF
+     ···········································································
+PS   @{a="_"} >$null #__________________________________________________________
+Sh   @{a="_____________" 2>/dev/null || true #__________________________________
+Bat  @{a="_"} >$null _ "______________________" >NUL 2>&1 || TYPE NUL & ECHO OFF
+
+```
 
 ## Links
 
