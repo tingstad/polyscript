@@ -13,7 +13,7 @@ For the rest of the file, I wanted to have some common code, and some interprete
 
 Tested on PowerShell 2.0 and 7.1, Windows Cmd 6.1, Bash 3.2 and 5.0, and Dash.
 
-## Description
+## Explanation
 
 Each language doesn't care what's inside a string or comment, let's replace those with `_`:
 
