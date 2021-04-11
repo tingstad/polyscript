@@ -1,0 +1,13 @@
+name: staging
+
+on:
+  push:
+    branches-ignore: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: ./test.sh
+
