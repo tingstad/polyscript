@@ -8,7 +8,7 @@ function rem {
     "true" -ne "\" >$null #"
 }
 function goto {
-    "true" -ne "\" >$null #"
+    rem
 }
 }; "true" -ne "\`" ; fi #">$null
 rem '
