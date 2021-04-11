@@ -11,6 +11,18 @@ run_tests() (
 			EOF
         )"
     }
+    { #PowerShell
+        img=mcr.microsoft.com/powershell
+        docker pull $img
+        output="$(docker run -i -v "$PWD/polyscript.sh:/polyscript.ps1" \
+            $img pwsh -File polyscript.ps1 2>&1)"
+        assert_equal "$output" "$(cat <<-EOF
+			Hello
+			I AM A POWERSHELL SCRIPT
+			Bye
+			EOF
+        )"
+    }
 )
 
 assert_equal() {
