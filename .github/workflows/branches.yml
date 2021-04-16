@@ -5,9 +5,13 @@ on:
     branches-ignore: [ main ]
 
 jobs:
-  build:
+  testsh:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - run: ./test.sh
-
+  testcmd:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v2
+      - run: pwsh -File test_cmd.ps1
