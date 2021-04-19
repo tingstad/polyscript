@@ -11,7 +11,7 @@ The trick is to use PowerShell's [hash table](https://docs.microsoft.com/en-us/p
 
 For the rest of the file, I wanted to have some common code, and some interpreter specific code. I also wanted to try using less `echo` and `<<HEREDOC` than most scripts, just for fun. I ended up using `if`, which exists in all languages.
 
-Tested on PowerShell 2.0 and 7.1, Windows Cmd 6.1, Bash 3.2 and 5.0, and Dash.
+Tested on PowerShell 2.0 and 7.1, Windows Cmd 6.1 and 10.0, Bash 3.2 and 5.0, and Dash.
 
 ## Explanation
 
