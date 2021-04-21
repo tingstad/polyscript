@@ -35,3 +35,4 @@ Bat  @{a="_"} >$null _ "______________________" >NUL 2>&1 || TYPE NUL & ECHO OFF
 * [SS64](https://ss64.com/): Command line reference
 * [printimage.c](https://gist.github.com/jart/7428b2b955dfd6eff7b6d31e00414508): Bash/C file, I like `/*bin/echo '` :)
 * [script.clj](https://gist.github.com/ericnormand/6bb4562c4bc578ef223182e3bb1e72c5) Clojure shell script
+* [Writing a](https://nkanaev.com/posts/polyglot/) Python/Ruby script
